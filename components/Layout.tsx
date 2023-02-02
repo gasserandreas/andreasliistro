@@ -8,23 +8,20 @@ type Props = {
 }
 
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
-  <div>
+  <div className="flex flex-col h-screen justify-between">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header>
-      <nav>
-        <Link href="/">Home</Link> | <Link href="/about">About</Link> |{' '}
-        <Link href="/users">Users List</Link> |{' '}
-        <a href="/api/users">Users API</a>
-      </nav>
+    <header className="flex-none basis-16 px-8 pt-4">
+      <nav></nav>
     </header>
-    {children}
-    <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
+    <main className="flex-auto">
+      {children}
+    </main>
+    <footer className="flex-none basis-8 px-8 text-center">
+      <span>Created by: Andreas Liistro</span>
     </footer>
   </div>
 )

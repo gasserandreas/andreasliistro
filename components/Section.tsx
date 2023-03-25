@@ -1,13 +1,14 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
+import { Box } from '@mui/material'
 
 type Props = {
   children?: ReactNode
 }
 
 const Section = ({ children }: Props) => (
-  <section className="px-32">
+  <Box paddingY={8}>
     {children}
-  </section>
+  </Box>
 )
 
 export default Section;

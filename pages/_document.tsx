@@ -9,7 +9,7 @@ import Document, {
 } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import { AppType } from 'next/app';
-// import theme, { roboto } from '../utils/theme';
+
 import theme from '../utils/theme';
 import createEmotionCache from '../utils/createEmotionCache';
 import { MyAppProps } from './_app';
@@ -20,7 +20,6 @@ interface MyDocumentProps extends DocumentProps {
 
 export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
   return (
-    // <Html lang="en" className={roboto.className}>
     <Html lang="en">
       <Head>
         {/* PWA primary color */}

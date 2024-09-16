@@ -1,4 +1,4 @@
-# Andreas Liistro - About me
+# andreasliistro - About me
 
 This is a personal "About me" website built with Astro, a modern static site generator.
 

@@ -26,16 +26,11 @@ const otherSkills = ['Conference Speaker', 'Apprenticeship Mentor']
 <PageLayout meta={{ title: 'Home' }}>
 	<div class='flex w-full flex-col gap-y-10'>
 		<section class='flex flex-col items-center gap-y-7'>
-			<Image
-				src={aboutMe}
-				alt='profile photo'
-				class='h-102 w-auto rounded-full'
-				loading='eager'
-			/>
+			<Image src={aboutMe} alt='profile photo' class='h-102 w-auto rounded-full' loading='eager' />
 
 			<div class='flex flex-col items-center gap-y-2'>
 				<h1 class='text-3xl font-bold'>Andreas Liistro</h1>
-				<h2 class='text-2xl mb-8'>Tech Lead & Software Engineer</h2>
+				<h2 class='mb-8 text-2xl'>Tech Lead & Software Engineer</h2>
 				<div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
 					<Label title='Novartis Research'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
@@ -76,8 +71,11 @@ const otherSkills = ['Conference Speaker', 'Apprenticeship Mentor']
 
 		<Section title='About'>
 			<p class='text-muted-foreground'>
-        As a Technical Lead Engineer and a Software Architect at Novartis Research, I focus on developing vital analytics platforms and applications for drug discovery. I have a strong interest in technology and data engineering, and I am always seeking ways to improve our solutions and enhance user experience.
-        My passion for technology drives me to explore innovative approaches that can make a real difference in our field.
+				As a Technical Lead Engineer and a Software Architect at Novartis Research, I focus on
+				developing vital analytics platforms and applications for drug discovery. I have a strong
+				interest in technology and data engineering, and I am always seeking ways to improve our
+				solutions and enhance user experience. My passion for technology drives me to explore
+				innovative approaches that can make a real difference in our field.
 			</p>
 		</Section>
 		<!-- {
@@ -96,99 +94,107 @@ const otherSkills = ['Conference Speaker', 'Apprenticeship Mentor']
 
 		<Section title='Experience'>
 			<Card
-        heading='Senior Principal Software Engineer'
-        subheading="As the Technical Lead Engineer and Software Architect at Novartis Biomedical Research, I oversee the development of advanced in-house analytics platforms and applications essential for drug discovery. Leading a talented team of software and data engineers, I drive the design and implementation of innovative applications for drug candidate selection, ensuring our solutions meet the highest standards of excellence and efficiency."
-        date='Sep 2023 - Present'
-        altText='Senior Principal Software Engineer'
-        imageClass='h-12 w-auto md:-left-16'
-      >
-        <SkillLayout skills={[
-          'Technical Leadership',
-          'Software Architectural Design',
-          'Software Engineering',
-          'Data Engineering',
-          'Software Development',
-          'Amazon Web Services (AWS)',
-        ]} />
-      </Card>
+				heading='Senior Principal Software Engineer'
+				subheading='As the Technical Lead Engineer and Software Architect at Novartis Biomedical Research, I oversee the development of advanced in-house analytics platforms and applications essential for drug discovery. Leading a talented team of software and data engineers, I drive the design and implementation of innovative applications for drug candidate selection, ensuring our solutions meet the highest standards of excellence and efficiency.'
+				date='Sep 2023 - Present'
+				altText='Senior Principal Software Engineer'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<SkillLayout
+					skills={[
+						'Technical Leadership',
+						'Software Architectural Design',
+						'Software Engineering',
+						'Data Engineering',
+						'Software Development',
+						'Amazon Web Services (AWS)'
+					]}
+				/>
+			</Card>
 
-      <Card
-        heading='(Senior) Principal Frontend Engineer'
-        subheading="As the frontend technical lead engineer, I oversaw the development of a global, in-house analytics platform crucial for drug discovery at NIBR. Leading a team of proficient front-end engineers, I drove the design and implementation of the platform's architecture. My role involved hands-on contributions to the development process while offering guidance and direction as the frontend lead engineer. Additionally, I collaborated with other platform architects to shape the overall architecture and design of the platform, ensuring cohesion and scalability."
-        date='Sep 2020 - Sep 2023'
-        altText='(Senior) Principal Frontend Engineer'
-        imageClass='h-12 w-auto md:-left-16'
-      >
-        <SkillLayout skills={[
-          'Web Development',
-          'React.js',
-          'Front-End Development',
-          'Team Leadership',
-          'Software Development',
-          'Amazon Web Services (AWS)',
-          'Datagrok',
-          'Software Architecture'
-        ]} />
-      </Card>
+			<Card
+				heading='(Senior) Principal Frontend Engineer'
+				subheading="As the frontend technical lead engineer, I oversaw the development of a global, in-house analytics platform crucial for drug discovery at NIBR. Leading a team of proficient front-end engineers, I drove the design and implementation of the platform's architecture. My role involved hands-on contributions to the development process while offering guidance and direction as the frontend lead engineer. Additionally, I collaborated with other platform architects to shape the overall architecture and design of the platform, ensuring cohesion and scalability."
+				date='Sep 2020 - Sep 2023'
+				altText='(Senior) Principal Frontend Engineer'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<SkillLayout
+					skills={[
+						'Web Development',
+						'React.js',
+						'Front-End Development',
+						'Team Leadership',
+						'Software Development',
+						'Amazon Web Services (AWS)',
+						'Datagrok',
+						'Software Architecture'
+					]}
+				/>
+			</Card>
 
-      <Card
-        heading='(Senior) Software Engineer'
-        subheading='Worked on the internal frontend tech stack to shift our current web application landscape towards a modern and unified standard. As a core member of the front end engineering team, I was providing web application architecture consultancy as well as hands-on coding support for large web applications.'
-        date='Dec 2017 - Sep 2020'
-        altText='(Senior) Software Engineer'
-        imageClass='h-12 w-auto md:-left-16'
-      >
-        <SkillLayout skills={[
-          'React.js',
-          'Front-End Development',
-          'Software Design',
-          'Software Development',
-          'Web Engineering'
-        ]} />
-      </Card>
+			<Card
+				heading='(Senior) Software Engineer'
+				subheading='Worked on the internal frontend tech stack to shift our current web application landscape towards a modern and unified standard. As a core member of the front end engineering team, I was providing web application architecture consultancy as well as hands-on coding support for large web applications.'
+				date='Dec 2017 - Sep 2020'
+				altText='(Senior) Software Engineer'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<SkillLayout
+					skills={[
+						'React.js',
+						'Front-End Development',
+						'Software Design',
+						'Software Development',
+						'Web Engineering'
+					]}
+				/>
+			</Card>
 
-      <Card
+			<Card
 				heading='Consulting Software Engineer'
 				subheading='Served as a consulting software developer, specializing primarily in frontend and mobile app development, within the pharmaceutical industry. Collaborated closely with a pharmaceutical client to deliver tailored software solutions.'
 				date='Aug 2012 - Nov 2017'
 				altText='Consulting Software Engineer'
 				imageClass='h-12 w-auto md:-left-16'
 			>
-        <SkillLayout skills={[
-          'User Experience (UX)',
-          'React.js',
-          'Swift (Programming Language)',
-          'Front-End Development',
-          'Software Development',
-          'Web Engineering'
-        ]} />
-      </Card>
+				<SkillLayout
+					skills={[
+						'User Experience (UX)',
+						'React.js',
+						'Swift (Programming Language)',
+						'Front-End Development',
+						'Software Development',
+						'Web Engineering'
+					]}
+				/>
+			</Card>
 		</Section>
 
 		<Section title='Education'>
 			<Card
-        heading='University of Applied Sciences and Arts Northwestern Switzerland FHNW'
-        subheading='Certificate of Advanced Studies - Data Science'
-        date='Jan 2024 - Jun 2024'
-        altText='FHNW - Data Science Certificate'
-        imageClass='h-12 w-auto md:-left-16'
-      />
+				heading='University of Applied Sciences and Arts Northwestern Switzerland FHNW'
+				subheading='Certificate of Advanced Studies - Data Science'
+				date='Jan 2024 - Jun 2024'
+				altText='FHNW - Data Science Certificate'
+				imageClass='h-12 w-auto md:-left-16'
+			/>
 
-      <Card
-        heading='University of Applied Sciences and Arts Northwestern Switzerland FHNW'
-        subheading='Bachelor of Science - Information Technology'
-        date='Sep 2013 - Dec 2018'
-        altText='FHNW - BSc in Information Technology'
-        imageClass='h-12 w-auto md:-left-16'
-      />
+			<Card
+				heading='University of Applied Sciences and Arts Northwestern Switzerland FHNW'
+				subheading='Bachelor of Science - Information Technology'
+				date='Sep 2013 - Dec 2018'
+				altText='FHNW - BSc in Information Technology'
+				imageClass='h-12 w-auto md:-left-16'
+			/>
 
-      <Card
-        heading='Gewerblich-industrielle Berufsschule Muttenz'
-        subheading='Apprenticeship & Professional Baccalaureate'
-        date='Aug 2008 - Aug 2012'
-        altText='Berufsschule Muttenz - Apprenticeship'
-        imageClass='h-12 w-auto md:-left-16'
-      />
+			<Card
+				heading='Gewerblich-industrielle Berufsschule Muttenz'
+				subheading='Apprenticeship & Professional Baccalaureate'
+				date='Aug 2008 - Aug 2012'
+				altText='Berufsschule Muttenz - Apprenticeship'
+				imageClass='h-12 w-auto md:-left-16'
+			/>
 		</Section>
 
 		<!-- <Section title='Projects'>
@@ -242,7 +248,5 @@ const otherSkills = ['Conference Speaker', 'Apprenticeship Mentor']
 			<SkillLayout title='Leadership' skills={leadership} />
 			<SkillLayout title='Other' skills={otherSkills} />
 		</Section>
-
 	</div>
-	
 </PageLayout>

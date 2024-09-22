@@ -16,7 +16,6 @@ This is a personal "About me" website built with Astro, a modern static site gen
 3. Run the development server: `npm run dev`
 4. Open `http://localhost:4321` in your browser
 
-
 ## Adding Content
 
 - Blog posts: Add Markdown files to `src/content/blog/`
